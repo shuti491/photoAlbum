@@ -1,0 +1,60 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.line {
+  height: 10em;
+  width: 97%;
+  border: 2px solid black;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+}
+.bar {
+  height: 10em;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  transition: transform 2s;
+}
+
+/* .activeBar {
+  height: 10em;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  transition: transform 2s;
+  transform: translate(-440px);
+} */
+.imageBar {
+  height: 99%;
+  border: 1px solid #ffffff;
+}
+
+.back {
+  width: 2%;
+  height: 20%;
+  position: absolute;
+  top: 37%;
+  background: antiquewhite;
+  z-index: 2;
+}
+
+.back:hover {
+  background: #add8e6;
+}
+.front:hover {
+  background: #add8e6;
+}
+.front {
+  width: 2%;
+  height: 20%;
+  position: absolute;
+  top: 37%;
+  right: 0%;
+  background: antiquewhite;
+  z-index: 2;
+}
