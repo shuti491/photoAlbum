@@ -20,15 +20,6 @@
   transition: transform 2s;
 }
 
-/* .activeBar {
-  height: 10em;
-  width: 100%;
-  z-index: 1;
-  position: relative;
-  display: flex;
-  transition: transform 2s;
-  transform: translate(-440px);
-} */
 .imageBar {
   height: 99%;
   border: 1px solid #ffffff;
@@ -57,4 +48,17 @@
   right: 0%;
   background: antiquewhite;
   z-index: 2;
+}
+
+.display {
+  height: 36em;
+  width: 98%;
+  background-color: cadetblue;
+  position: relative;
+  margin-top: 12em;
+}
+
+.zoom {
+  height: 100%;
+  width: 100%;
 }
