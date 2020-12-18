@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import "./styles.css";
-
 export default function App() {
   const containerRef = useRef(null);
 
   const elementRef = useRef(null);
   const [active, setActive] = useState(false);
+  const [current, setCurrent] = useState("welcome.jpg");
   const [distance, setdistance] = useState(0);
   const [elWidth, setElWidth] = useState(0);
   const [conLength, setLength] = useState(0);
@@ -94,6 +94,7 @@ export default function App() {
                 key={index}
                 src={image}
                 alt="test"
+                onClick={() => setCurrent(image)}
               ></img>
             )
           )}
@@ -104,6 +105,9 @@ export default function App() {
           alt="front"
           onClick={() => showNext()}
         ></img>
+      </div>
+      <div className="display">
+        <img src={current} alt="display" className="zoom"></img>
       </div>
     </div>
   );
